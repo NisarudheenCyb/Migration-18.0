@@ -1,13 +1,11 @@
-from os import waitid
-
 import psycopg2
 import base
-# import addons
+import addons
 import rename_db
 
 
 database_params = {
-    'dbname': 'odoo_17_migration_test',
+    'dbname': 'Database_sale_test',
     'user': 'odoo17',
     'password': 'cool',
     'host': 'localhost',
@@ -43,6 +41,6 @@ if __name__ == "__main__":
     """
 
     data_cursor = execute_data(database_params)
-    base.active_func()
-    # addons.active_func()
-    rename_db.rename_database(database_params)
+    # base.active_func()
+    addons.active_func()
+    # rename_db.rename_database(database_params)

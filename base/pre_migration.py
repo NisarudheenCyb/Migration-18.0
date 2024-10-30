@@ -3,6 +3,9 @@ import console
 from upgrade_lib import upgrade_tools
 
 class PreTableUpdater:
+    _name = "base.table.updater"
+
+
     ADD_TABLES = {
         "auth_totp_device",
         "iap_account",

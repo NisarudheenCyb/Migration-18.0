@@ -3,6 +3,7 @@ import console
 
 
 class BasePostMigration:
+    _name = "base.post.migrator"
 
     @staticmethod
     def execute_query(conn, query, params=None):
